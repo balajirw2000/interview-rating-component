@@ -46,15 +46,142 @@ h6 {
   --medium-grey: hsl(216, 12%, 54%);
   --dark-blue: hsl(213, 19%, 18%);
   --very-dark-blue: hsl(216, 12%, 8%);
+  --secondary: hsl(213deg, 20%, 22%);
 
   --fs-base: 15px;
 
   --ff-base: "Overpass", sans-serif;
 }
 
+body {
+  background-color: var(--very-dark-blue);
+  font-family: var(--ff-base);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container,
+.thank-container {
+  background-color: var(--dark-blue);
+  margin: 2rem;
+  max-width: 400px;
+  border-radius: 1.5rem;
+  padding: 2rem;
+}
+
+.star-section {
+  background-color: var(--secondary);
+  border-radius: 50%;
+  padding: 1rem;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: fit-content;
+  margin-bottom: 2rem;
+}
+
+.card-title {
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  color: var(--medium-grey);
+  margin-bottom: 1.75rem;
+}
+
+.ratings {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.75rem;
+}
+
+.btn {
+  border: none;
+  background-color: var(--secondary);
+  color: var(--medium-grey);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.ratings .btn:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.ratings .btn:focus {
+  background-color: var(--light-grey);
+  color: var(--white);
+}
+
+.button {
+  width: 100%;
+  border-radius: 2rem;
+  background-color: var(--orange);
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  padding: 0.7rem;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: var(--orange);
+  background-color: var(--white);
+}
+
+.thank-container {
+  text-align: center;
+}
+
+.card-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.75rem;
+}
+
+.selection-msg {
+  color: var(--orange);
+  background-color: var(--secondary);
+  border-radius: 2rem;
+  padding: 0.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.greeting {
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.thank-text {
+  color: var(--medium-grey);
+}
+
+.hidden {
+  display: none;
+}
+
+.checked {
+  background-color: var(--white);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: var(--white);
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
